@@ -1,0 +1,661 @@
+body, .detail-shots {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body #name, .left nav {
+	font-family: 'Catamaran', sans-serif;
+}
+
+#name .main-name {
+	margin-top: 1.4em;
+	margin-left: 3.4em;
+	margin-bottom: 0.3em;
+	color: black;
+}
+
+#name .main-name a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#name .main-name a:visited {
+	color: black;
+}
+
+.back-to-top nav {
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	z-index: 3;
+}
+
+.back-to-top nav ul {
+	font-size: 30pt;
+}
+
+.back-to-top a:link {
+	text-decoration: none;
+	color: black;
+	transition: .3s;
+}
+
+.back-to-top a:visited {
+	color: black;
+}
+
+.back-to-top a:hover {
+	color: #787878;
+}
+
+.left nav {
+	position: fixed;
+	margin-left: 5em;
+}
+
+ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+.nav a:link {
+	text-decoration: none;
+	color: #787878;
+	line-height: 1.5em;
+	transition: .3s;
+}
+
+.nav a:visited {
+	color: #787878;
+}
+
+.nav a:hover {
+	color: black;
+}
+
+#name .left h2 {
+	font-size: 2.2em;
+}
+
+#name .left {
+	position: relative;
+	width: 100%;
+}
+
+.left {
+	position: relative;
+	width: 20%;
+	display: inline-block;
+	vertical-align: left;
+}
+
+.one {
+	position: relative;
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2em;
+}
+
+.one .image {
+	position: relative;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.one img {
+	float: left;
+	width: 32%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	transition: .3s;
+}
+
+.one img:hover {
+	opacity: .3;
+}
+
+.detail-shots {
+	position: relative;
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2em;
+}
+
+.detail-shots img {
+	width: 100%;
+	padding-bottom: 2%;
+}
+
+.detail-shots .caption p {
+	margin-top: 0;
+	font-size: 10pt;
+	line-height: 15pt;
+}
+
+.detail-shots .caption p .caption-title{
+	margin-top: 0;
+	font-size: 10pt;
+	font-weight: 600;
+	line-height: 15pt;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	font-size: 10pt;
+	max-width: 30px
+}
+
+.dropdown:hover {
+	color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a {
+	position: relative;
+	display: block;
+}
+
+.portfolio, .contact {
+	line-height: 1.6em;
+}
+
+#bottom {
+	height: 150px;
+}
+
+.bottom-end .copyright {
+	margin-left: 5em;
+}
+
+.bottom-end .copyright p {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 300;
+	font-size: 10pt;
+	margin-left: 3em;
+	padding-top: 110px;
+	position: relative;
+	bottom: 0;
+}
+
+
+
+
+
+/*///////////////////////////////////////////// web responsive styling */
+
+@media only screen and (max-width:1082px) {
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+		position: relative;
+	}
+
+	.dropbtn {
+		display: inline-block;
+	}
+
+	.left nav {
+		position: relative;
+		margin-left: 5em;
+		color: #787878;
+		width: 300%;
+	}
+
+	.list li {
+		float: left;
+		display: inline-block;
+	}
+
+	li a {
+		float: left;
+		padding-right: 10px;
+		display: block;
+	}
+
+	ul {
+		margin-top: 0;
+	}
+
+	.one, .detail-shots {
+		margin-top: 4.5em;
+	}
+}	
+
+
+@media only screen and (max-width:610px) {
+	.main-name {
+		margin-top: 1.4em;
+		margin-left: 10%;
+		color: black;
+	}
+
+	.left {
+		width: 10%;
+	}
+
+	.one {
+		width: 90%;
+	}
+
+	.one img {
+		width: 46%;
+	}
+
+	.left nav {
+		position: relative;
+		display: inline-block;
+		margin-left: 1em;
+		color: #787878;
+		width: 1000%;
+	}
+
+	.bottom-end .copyright {
+		margin-left: 0%;
+	}
+
+	.bottom-end .copyright p {
+		margin-left: 10%;
+	}
+
+	.one, .detail-shots {
+		margin-top: 4.5em;
+	}
+
+	.detail-shots .about-one {
+		display: block;
+		width: 100%;
+	}
+
+	.detail-shots .about-one img {
+		width: 100%;
+	}
+
+	.detail-shots .about-two {
+		margin-top: 4.5em;
+		display: block;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:414px) {
+	#name .left h2{
+		text-align: center;
+		margin-top: .7em;
+		margin-left: 0;
+	}
+
+	.left {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+	}
+
+	.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: fixed;
+	}
+
+	.left .list {
+		position: relative;
+		text-align: center;
+		color: #787878;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.left .list ul {
+		padding-left: 19%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.back-to-top nav ul {
+		opacity: .5;
+	}
+
+	.one {
+		clear: left;
+		width: 100%;
+	}
+
+	.one img {
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+
+	.detail-shots {
+		width: 100%;
+	}
+
+	.detail-shots img {
+		padding-right: 0;
+	}
+
+	.detail-shots h1, .detail-shots h2, .detail-shots p, .contact-icon-row a {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.detail-shots h1 {
+		margin-bottom: 0;
+	}
+
+	.detail-shots .about-two {
+		clear: left;
+	}
+
+	.detail-shots .about-two p {
+		padding-top: 10%;
+	}
+
+	.contact-header, .contact-content {
+		text-align: center;
+	}
+
+	.contact-content p {
+		width: 60%;
+		margin: auto;
+		text-align: left;
+	}
+
+	.contact-icon-row a {
+		margin-left: 0;
+		padding-left: 12px;
+	}
+
+	.bottom-end .copyright p {
+		margin: auto;
+		text-align: center;
+	}
+}
+
+
+
+
+
+/*///////////////////////////////////////////// about page styling */
+
+.about-one {
+	position: relative;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.about-one img {
+	width: 95%;
+}
+
+.about-two {
+	position: relative;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.detail-shots .about-two p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: black;
+	font-weight: 400;
+	line-height: 14.5pt;
+	margin-top: 0;
+}
+
+
+
+
+
+
+/*///////////////////////////////////////////// contact page styling */
+
+.contact-icon-row a {
+	line-height: 100px;
+	padding-right: 12px;
+	font-size: 20pt;
+	color: #787878;
+	transition: .3s;
+}
+
+.contact-icon-row a:visited {
+	color: #787878;
+}
+
+.contact-icon-row a:hover {
+	color: black;
+}
+
+.contact-content p a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.contact-content p a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.contact-header {
+	font-weight: 500;
+	margin-top: 0;
+}
+
+.contact-content {
+	font-weight: 200;
+}
+
+.contact-content i {
+	color: black;
+}
+
+.contact-icon, .hidden-icon {
+	padding-right: 10px;
+}
+
+.detail-shots .contact-content p {
+	color: black;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 27px;
+}
+
+.hidden-icon {
+	color: white;
+}
+
+
+
+
+
+
+/*///////////////////////////////////////////// editorial page */
+
+.detail-shots h1 {
+	font-size: 18pt;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 22pt;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.detail-shots h1 .date {
+	font-size: 13pt;
+}
+
+.detail-shots p {
+	font-weight: 300;
+	font-size: 11.5pt;
+	line-height: 17.5pt;
+	color: #787878;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.prev, .next {
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	margin-bottom: 30px;
+}
+
+.prev:hover, .next:hover {
+  color: #717171;
+ }
+
+.slides {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slides img {
+	padding-bottom: 0;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*///////////////////////////////////////////// bike finder */
+
+.detail-shots .bike-text {
+	margin-top: 70px;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+.detail-shots .bike-text-two {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+.detail-shots ul {
+	font-weight: 300;
+	font-size: 11.5pt;
+	line-height: 17.5pt;
+	color: #787878;
+	list-style-type: circle;
+}
+
+
+/*///////////////////////////////////////////// configurator */
+
+.detail-shots .donut {
+	width: 100px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.detail-shots .donut img {
+	transition: transform .5s;
+	transition-timing: ease-in-out;
+}
+
+.detail-shots .donut img:hover {
+	transform: rotate(360deg);
+}
+
+.detail-shots .donut-caption p {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin: auto;
+	text-align: center;
+}
+
+.detail-shots p .donut-invision {
+	font-style: italic;
+
+}
+
+
+/*//////////////////////////////////////////// fontsinuse */
+
+.fontsinuse p{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.detail-shots .fontsinuse a{
+	transition: .3s ease-in-out;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.detail-shots .fontsinuse a:hover {
+	color: white;
+	background-color: #787878;
+}
+
+.fontsinuse a:link {
+	color: #787878;
+}
+
+/*////WHY WON'T THIS WORK
+.fontsinuse p:hover {
+	color: black;
+}
+*/
+
+.detail-shots p a:visited {
+	color: #787878;
+}
+
+
+
+
+
+
+
+
