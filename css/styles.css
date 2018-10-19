@@ -94,21 +94,30 @@ ul {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 2em;
-}
-
-.one .image {
-	position: relative;
-	display: inline-block;
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 .one img {
 	float: left;
+	/*
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    display: -moz-flex;
+    -moz-flex-wrap: wrap;
+    -moz-flex-direction: row;
+    */
+    display: inline-block;
+    vertical-align: top;
 	width: 32%;
-	padding-right: 2%;
-	padding-bottom: 2%;
+	margin: 0;
+	padding-right: 1.5%;
+	padding-bottom: 1.5%;
 	transition: .3s;
 }
 
@@ -403,6 +412,15 @@ ul {
 	width: 95%;
 }
 
+#corgi-img {
+	margin: auto;
+	padding: 0;
+	z-index: 10;
+	position: relative;
+	left: 8%;
+	display: block;
+}
+
 .about-two {
 	position: relative;
 	width: 50%;
@@ -488,7 +506,7 @@ ul {
 /*///////////////////////////////////////////// editorial page */
 
 .detail-shots h1 {
-	font-size: 18pt;
+	font-size: 20pt;
 	font-weight: 400;
 	font-style: italic;
 	line-height: 22pt;
@@ -502,8 +520,8 @@ ul {
 
 .detail-shots p {
 	font-weight: 300;
-	font-size: 11.5pt;
-	line-height: 17.5pt;
+	font-size: 13pt;
+	line-height: 23pt;
 	color: #787878;
 	margin-top: 70px;
 	margin-bottom: 50px;
@@ -592,10 +610,11 @@ ul {
 /*///////////////////////////////////////////// configurator */
 
 .detail-shots .donut {
-	width: 100px;
+	width: 150px;
 	margin: auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	text-align: center;
 }
 
 .detail-shots .donut img {
@@ -625,6 +644,7 @@ ul {
 .fontsinuse p{
 	margin-top: 20px;
 	text-align: center;
+	font-size: ;
 }
 
 .detail-shots .fontsinuse a{
