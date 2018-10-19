@@ -414,6 +414,7 @@ ul {
 
 #corgi-img {
 	margin: auto;
+	margin-top: ;
 	padding: 0;
 	z-index: 10;
 	position: relative;
@@ -435,6 +436,7 @@ ul {
 	font-weight: 400;
 	line-height: 14.5pt;
 	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 
