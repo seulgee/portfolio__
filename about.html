@@ -9,6 +9,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -25,7 +30,7 @@
 						<a href="javascript:void(0)" class="dropbtn">Portfolio</a>
 						<div class="dropdown-content">
 							<a href="works.html">Works</a>
-							<a href="sketches.html">Sketches</a>
+							<a href="sketches.html">Play</a>
 						</div>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
@@ -34,7 +39,7 @@
 			</nav>
 		</div>
 		<div class="detail-shots">
-		<div class="about-one"><img src="images/me.jpg"></div><div class="about-two"><p>Hello, thank you for visiting my website! I am part designer, part illustrator from Seoul, Korea, but have lived in the UK, PA, NY, and now living in St. Louis. I am a current Junior in Communication Design with a minor in Marketing at Washington University in St. Louis.<br><br>I love dried fruits and corgi butts.</p></div></div>
+		<div class="about-one"><img src="images/me.jpg"></div><div class="about-two"><p>Hello, thank you for visiting my website! I am part designer, part illustrator from Seoul, Korea, but have lived in the UK, PA, NY, and now living in St. Louis. I am a current Senior in Communication Design with a minor in Marketing at Washington University in St. Louis.My interests lie in interaction design because the idea of guiding my audience through a single experience or a series of experiences I have created (whether it be on a screen or physical) excites me. I also enjoy animating on screen because I love creating movement, which is something that resonates with me.<br><br>I love dried fruits and <span id="corgi">corgi butts.</span><img src="images/about-corgi.png" id="corgi-img" style="display: none; width: 200px"></p></div></div>
 	</section>
 	<section id="bottom">
 		<div class="bottom-end">
@@ -49,6 +54,15 @@
 				</ul>
 			</nav>
 		</div>	
+
+	<script>
+		$("#corgi").mouseenter(function (){
+			$('#corgi-img').show()
+		});
+		$("#corgi").mouseleave(function (){
+			$('#corgi-img').hide()
+		});
+	</script>
 </body>
 
 </html>
