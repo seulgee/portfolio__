@@ -1,3 +1,8 @@
+::selection {
+	background-color: #f7ce68;
+	color: black;
+}
+
 body, .detail-shots {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -413,12 +418,11 @@ ul {
 }
 
 #corgi-img {
-	margin: auto;
-	margin-top: ;
+	margin-right: 0;
 	padding: 0;
 	z-index: 10;
 	position: relative;
-	left: 8%;
+	left: 6%;
 	display: block;
 }
 
@@ -427,14 +431,15 @@ ul {
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
+	padding-left: 10px;
 }
 
 .detail-shots .about-two p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 10pt;
-	color: black;
+	color: #787878;
+	font-size: 10.5pt;
 	font-weight: 400;
-	line-height: 14.5pt;
+	line-height: 17pt;
 	margin-top: 0;
 	margin-bottom: 10px;
 }
